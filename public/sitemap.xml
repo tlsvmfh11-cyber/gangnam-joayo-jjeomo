@@ -42,4 +42,40 @@
     <priority>0.8</priority>
   </url>
 
+  <!-- 선릉 페이지 (신규) -->
+  <url>
+    <loc>https://joayojjeomo.com/seolleung</loc>
+    <lastmod>2026-02-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://joayojjeomo.com/seolleung/price</loc>
+    <lastmod>2026-02-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://joayojjeomo.com/seolleung/reviews</loc>
+    <lastmod>2026-02-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://joayojjeomo.com/seolleung/info</loc>
+    <lastmod>2026-02-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://joayojjeomo.com/seolleung/system</loc>
+    <lastmod>2026-02-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
 </urlset>

@@ -27,6 +27,7 @@
 
 /* 커스텀 유틸리티 */
 @layer utilities {
+  /* 강남 골드 스타일 */
   .text-gold-gradient {
     background: linear-gradient(135deg, #d4af37, #ffd700, #d4af37);
     -webkit-background-clip: text;
@@ -44,6 +45,48 @@
     background: linear-gradient(90deg, transparent, #d4af37, transparent);
     height: 1px;
   }
+
+  /* 선릉 네온 스타일 (신규) */
+  .neon-text-pink {
+    color: #ff0080;
+    text-shadow: 0 0 10px #ff0080, 0 0 20px #ff0080, 0 0 30px #ff0080;
+  }
+
+  .neon-text-blue {
+    color: #00e5ff;
+    text-shadow: 0 0 10px #00e5ff, 0 0 20px #00e5ff, 0 0 30px #00e5ff;
+  }
+
+  .neon-text-gradient {
+    background: linear-gradient(135deg, #ff0080, #00e5ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .neon-text-glow {
+    text-shadow: 0 0 15px currentColor;
+  }
+
+  .glass-card-neon {
+    background: rgba(26, 26, 46, 0.7);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 0, 128, 0.3);
+  }
+
+  .neon-button {
+    background: linear-gradient(135deg, #ff0080, #00e5ff);
+    color: #0a0a0a;
+    box-shadow: 0 0 30px rgba(255, 0, 128, 0.6);
+  }
+
+  .neon-button:hover {
+    box-shadow: 0 0 60px rgba(255, 0, 128, 0.9);
+  }
+
+  .neon-gradient-bg {
+    background: linear-gradient(135deg, rgba(255, 0, 128, 0.1), rgba(0, 229, 255, 0.1));
+  }
 }
 
 /* 성능 최적화 */
@@ -52,6 +95,7 @@ img {
 }
 
 .glass-card,
+.glass-card-neon,
 section {
   content-visibility: auto;
   contain-intrinsic-size: auto 500px;

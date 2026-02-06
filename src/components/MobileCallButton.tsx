@@ -1,9 +1,13 @@
 import { FaPhone } from 'react-icons/fa'
 
-const MobileCallButton = () => {
+interface MobileCallButtonProps {
+  phone?: string
+}
+
+const MobileCallButton = ({ phone = '010-2303-3778' }: MobileCallButtonProps) => {
   return (
     <a
-      href="tel:010-2303-3778"
+      href={`tel:${phone}`}
       className="fixed bottom-0 left-0 right-0 z-50 md:hidden"
       aria-label="전화 예약 문의"
     >
@@ -13,7 +17,7 @@ const MobileCallButton = () => {
         </div>
         <div className="text-primary">
           <div className="text-sm font-semibold opacity-90">지금 바로 예약</div>
-          <div className="text-xl font-bold">010-2303-3778</div>
+          <div className="text-xl font-bold">{phone}</div>
         </div>
       </div>
     </a>
