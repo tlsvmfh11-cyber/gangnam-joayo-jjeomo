@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="crownGold" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffd700"/>
+      <stop offset="50%" style="stop-color:#d4af37"/>
+      <stop offset="100%" style="stop-color:#b8860b"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#d4af37" flood-opacity="0.7"/>
+    </filter>
+  </defs>
+
+  <!-- 배경 -->
+  <rect width="128" height="128" fill="#0a0a0a" rx="20"/>
+
+  <!-- 왕관 -->
+  <g filter="url(#shadow)">
+    <!-- 왕관 베이스 -->
+    <path d="M 24 85 L 24 95 L 104 95 L 104 85 L 94 85 L 90 45 L 80 60 L 64 35 L 48 60 L 38 45 L 34 85 Z"
+          fill="url(#crownGold)"/>
+
+    <!-- 왕관 장식 볼 -->
+    <circle cx="38" cy="43" r="5" fill="#ffd700"/>
+    <circle cx="64" cy="33" r="6" fill="#ffd700"/>
+    <circle cx="90" cy="43" r="5" fill="#ffd700"/>
+
+    <!-- 하이라이트 -->
+    <path d="M 35 85 L 35 92 L 93 92 L 93 85" fill="#ffd700" opacity="0.3"/>
+    <circle cx="64" cy="33" r="3" fill="#fff" opacity="0.6"/>
+  </g>
+
+  <!-- 텍스트 -->
+  <text x="64" y="118"
+        font-family="Arial, sans-serif"
+        font-size="16"
+        font-weight="bold"
+        fill="#d4af37"
+        text-anchor="middle">Premium</text>
+</svg>

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffd700;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#d4af37;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ffd700;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- 배경 -->
+  <rect width="128" height="128" fill="#1a1a1a" rx="24"/>
+
+  <!-- 다이아몬드 형태 -->
+  <path d="M 64 20 L 100 50 L 64 108 L 28 50 Z"
+        fill="url(#goldGradient)"
+        filter="url(#glow)"
+        opacity="0.9"/>
+
+  <!-- 중앙 하이라이트 -->
+  <path d="M 64 30 L 90 50 L 64 85 L 38 50 Z"
+        fill="#fff"
+        opacity="0.3"/>
+
+  <!-- 텍스트 "좋" -->
+  <text x="64" y="74"
+        font-family="Arial, sans-serif"
+        font-size="42"
+        font-weight="bold"
+        fill="#1a1a1a"
+        text-anchor="middle">좋</text>
+</svg>

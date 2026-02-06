@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 전역 스타일 */
+@layer base {
+  * {
+    @apply select-none;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-primary text-white m-0 p-0;
+    font-family: 'Pretendard', system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  img {
+    user-drag: none;
+    -webkit-user-drag: none;
+  }
+}
+
+/* 커스텀 유틸리티 */
+@layer utilities {
+  .text-gold-gradient {
+    background: linear-gradient(135deg, #d4af37, #ffd700, #d4af37);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .glass-card {
+    background: rgba(42, 42, 42, 0.7);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(212, 175, 55, 0.3);
+  }
+
+  .gold-line {
+    background: linear-gradient(90deg, transparent, #d4af37, transparent);
+    height: 1px;
+  }
+}
+
+/* 성능 최적화 */
+img {
+  content-visibility: auto;
+}
+
+.glass-card,
+section {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 500px;
+}

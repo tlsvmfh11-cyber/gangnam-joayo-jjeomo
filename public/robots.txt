@@ -1,0 +1,13 @@
+# robots.txt for 강남 좋아요 쩜오
+# 모든 검색엔진 크롤러 허용
+
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+
+# 크롤 속도 제한 (선택)
+Crawl-delay: 1
+
+# Sitemap 위치
+Sitemap: https://joayojjeomo.com/sitemap.xml
